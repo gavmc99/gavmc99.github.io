@@ -84,25 +84,25 @@
 "type": "Meet_Up",
 "description": "Patricks Bar, Ennis"
 },
-{"id": 108,
+{"id": 109,
 "name": "Laois Meet Up",
 "lat":  53.14767623517756,
 "lng":  -7.182900129420662,
 "type": "Meet_Up",
 "description": "The Railway Bar, Portarlington, Co. Laois"
 },
-{"id": 109,
+{"id": 110,
 "name": "Mayo Meet Up",
 "lat":  53.799602130866866,
 "lng":   -9.522017673567671,
 "type": "Meet_Up",
 "description": "Cosy Joe's, Westport, Co. Mayo"
 },
-{"id": 110,
+{"id": 111,
 "name": "Derry Meet Up",
 "lat":  54.99700174978112,
 "lng":  -7.320288346523804,
 "type": "Meet_Up",
 "description": "Silver Street Derry"
-},
+}
 ]
