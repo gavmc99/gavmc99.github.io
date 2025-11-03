@@ -45,8 +45,8 @@
     map.addControl(new mapboxgl.NavigationControl());
 
     // Load pin data from pins.json
-    fetch("gavmc99.github.io/mag_pins.json")
-      //fetch("mag_pins.json")
+    //fetch("gavmc99.github.io/mag_pins.json")
+    fetch("mag_pins.json")
       .then(response => {
         if (!response.ok) throw new Error("Failed to load pins.json");
         return response.json();
