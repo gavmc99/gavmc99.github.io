@@ -45,7 +45,6 @@
     map.addControl(new mapboxgl.NavigationControl());
 
     // Load pin data from pins.json
-    //fetch("gavmc99.github.io/mag_pins.json")
     fetch("mag_pins.json")
       .then(response => {
         if (!response.ok) throw new Error("Failed to load pins.json");
@@ -58,12 +57,14 @@
           el.className = 'custom-marker';
 
           // Assign icon based on type
-          // el.style.backgroundImage = 'url(icons/beer.svg)';
           if (pin.type === 'Mag') {
              el.style.backgroundImage = 'url(icons/clothing-store.svg)';
+            console.log("MAG");
           } else if (pin.type === 'Meet_Up') {
              el.style.backgroundImage = 'url(icons/building.svg)';
+            console.log("MEET");
           }
+          console.log("END");
           
           // Add marker to map with popup
           new mapboxgl.Marker(el)
