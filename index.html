@@ -45,7 +45,7 @@
     map.addControl(new mapboxgl.NavigationControl());
 
     // Load pin data from pins.json
-    fetch("pins.json")
+    fetch("meet_ups.json")
       .then(response => {
         if (!response.ok) throw new Error("Failed to load pins.json");
         return response.json();
@@ -66,7 +66,7 @@
             console.log("MEET");
           }
           console.log("END");
-          el.style.backgroundImage = 'url(icons/beer.svg)';
+          //el.style.backgroundImage = 'url(icons/beer.svg)';
           
           // Add marker to map with popup
           new mapboxgl.Marker(el)
