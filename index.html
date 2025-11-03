@@ -70,11 +70,11 @@
           // Add marker to map with popup
           new mapboxgl.Marker(el)
             .setLngLat([pin.lng, pin.lat])
-            .setPopup(new mapboxgl.Popup().setHTML('
+            .setPopup(new mapboxgl.Popup().setHTML(`
               <strong>${pin.name}</strong><br/>
               ${pin.description || ""}<br/>
               ${pin.link ? '<a href="${pin.link}" target="_blank">More info</a>' : ""}
-            '))
+            `))
             .addTo(map);
         });
       })
