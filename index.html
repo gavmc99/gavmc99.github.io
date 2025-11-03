@@ -57,18 +57,14 @@
           const el = document.createElement('div');
           el.className = 'custom-marker';
 
-           // Assign icon based on type
-  if (pin.type === 'Mag') {
-     el.style.backgroundImage = 'url(icons/clothing-store.svg)';
-  } else if (pin.type === 'Meet_Up') {
-     el.style.backgroundImage = 'url(icons/building.svg)';
-  }
-
+          // Assign icon based on type
+          // el.style.backgroundImage = 'url(icons/beer.svg)';
+          if (pin.type === 'Mag') {
+             el.style.backgroundImage = 'url(icons/clothing-store.svg)';
+          } else if (pin.type === 'Meet_Up') {
+             el.style.backgroundImage = 'url(icons/building.svg)';
+          }
           
-
-            //el.style.backgroundImage = 'url(icons/beer.svg)';
-
-
           // Add marker to map with popup
           new mapboxgl.Marker(el)
             .setLngLat([pin.lng, pin.lat])
