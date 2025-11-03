@@ -73,7 +73,7 @@
             .setPopup(new mapboxgl.Popup().setHTML(`
               <strong>${pin.name}</strong><br/>
               ${pin.description || ""}<br/>
-              ${pin.link ? '<a href="${pin.link}" target="_blank">More info</a>` : ""}
+              ${pin.link ? '<a href="${pin.link}" target="_blank">More info</a>' : ""}
             '))
             .addTo(map);
         });
