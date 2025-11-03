@@ -1,0 +1,108 @@
+[
+{
+"id": 1,
+"name": "Tev",
+"lat": 53.3483719,
+"lng": -6.3535737,
+"type": "Mag",
+"description": "Chapelizod"
+},
+{
+"id": 2,
+"name": "Gavin",
+"lat": 53.9866424,
+"lng": -7.3761474,
+"type": "Mag",
+"description": "Cavan"
+},
+{
+"id": 3,
+"name": "Paul",
+"lat": 54.2722505,
+"lng": -8.4736136,
+"type": "Mag",
+"description": "Sligo"
+},
+{
+"id": 101,
+"name": "Dublin Meet Up",
+"lat":  53.3571881438334,
+"lng":  -6.26391256480404,
+"type": "Meet_Up",
+"description": "Bleecker Street Bar, Dublin"
+},
+{
+"id": 102,
+"name": "Sligo Meet Up",
+"lat": 54.270486923496,
+"lng":  -8.47462432051306,
+"type": "Meet_Up",
+"description": "Gracie's Bar, Sligo"
+},
+{
+"id": 103,
+"name": "Cork Meet Up",
+"lat": 51.907410512616934,
+"lng": -8.474193539968564,
+"type": "Meet_Up",
+"description": "Quinlans Bar, Blackpool, Cork"
+},
+{
+"id": 104,
+"name": "Limerick Meet Up",
+"lat": 52.66439458873347,
+"lng":  -8.624525544785245,
+"type": "Meet_Up",
+"description": "The Old Quarter GastroPub, Cork"
+},
+{
+"id": 105,
+"name": "Belfast Meet Up",
+"lat": 54.56819781449638,
+"lng": -5.9691111876725635,
+"type": "Meet_Up",
+"description": "The Doyen, Belfast"
+},
+{"id": 106,
+"name": "Tipperary Meet Up",
+"lat":  52.67891417302117,
+"lng":  -7.81304521854578,
+"type": "Meet_Up",
+"description": "The County Bar, Thurles, Tipperary"
+},
+{"id": 107,
+"name": "Galway Meet Up",
+"lat":  53.2755293080185,
+"lng":  -9.048379801370642,
+"type": "Meet_Up",
+"description": "Mary Mullens Bar, Galway"
+},
+{"id": 108,
+"name": "Ennis Meet Up",
+"lat":  52.84275451852157,
+"lng":  -8.98504453128356,
+"type": "Meet_Up",
+"description": "Patricks Bar, Ennis"
+},
+{"id": 108,
+"name": "Laois Meet Up",
+"lat":  53.14767623517756,
+"lng":  -7.182900129420662,
+"type": "Meet_Up",
+"description": "The Railway Bar, Portarlington, Co. Laois"
+},
+{"id": 109,
+"name": "Mayo Meet Up",
+"lat":  53.799602130866866,
+"lng":   -9.522017673567671,
+"type": "Meet_Up",
+"description": "Cosy Joe's, Westport, Co. Mayo"
+},
+{"id": 110,
+"name": "Derry Meet Up",
+"lat":  54.99700174978112,
+"lng":  -7.320288346523804,
+"type": "Meet_Up",
+"description": "Silver Street Derry"
+},
+]
