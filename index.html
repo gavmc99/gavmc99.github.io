@@ -70,6 +70,14 @@
           type: "Feature",
           properties: {
             name: pin.name,
+            street: pin.street,
+            city: pin.city,
+            country: pin.country,
+            zip: pin.zip,
+            phone: pin.phone,
+            //email: pin.EMail,
+            //web_url: pin.web_url,
+            //version: pin.version,
             description: pin.description,
             type: pin.type
           },
@@ -185,10 +193,10 @@
       // Popup for individual pins
       map.on('click', 'unclustered-point', e => {
         const coords = e.features[0].geometry.coordinates.slice();
-        const { name, description } = e.features[0].properties;
+        const { name, street,city,country,zip,phone, description } = e.features[0].properties;
         new mapboxgl.Popup()
           .setLngLat(coords)
-          .setHTML(`<strong>${name}</strong><br/>${description}`)
+          .setHTML(`<strong>${name}</strong><br/>${street}<br/>${city}<br/>${country}<br/>${zip}<br/>${phone}<br/><br/>${description}`)
           .addTo(map);
       });
 
