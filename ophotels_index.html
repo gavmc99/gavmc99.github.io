@@ -23,17 +23,11 @@
       rel="stylesheet"
     />
     <style>
-    body { margin: 0; padding: 0 }
-    #map {
-    width: 100%;
-    height: calc(100vh - 400px); /* Fill remaining height of the page */
-  }
-  #desc {
-    position: relative;
-    top: 0;
-    z-index: 10;
-  }
-  </style>
+      html, body { height: 100%; margin: 0; padding: 0; }
+      body { display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif; }
+      #desc { position: relative; z-index: 10; padding: 1rem; background: #fff; }
+      #map { width: 100%; flex: 1 1 auto; min-height: 0; }
+    </style>
 </head>
 <body>
     <div id="desc">
