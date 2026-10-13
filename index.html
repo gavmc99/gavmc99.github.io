@@ -2,33 +2,42 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Irish Mags - Locations</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Locations map for Irish Mags — meetups, stores and venues.">
-  <link rel="canonical" href="/" />
+  <title>OPB Hotels</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Hotels that use OnePageBooking HotelNetSolutions as their booking engine.">
+   <meta name="keywords" content="OnePageBooking, HotelNetSolutions, Phishing, Datenschutz, Sicherheit, Sicherheitshinweis, Phishing, Betrug, HNS, OPB, OPB6, OPB5">
+   <meta property="og:title" content="OPB Hotels">
+    <meta property="og:description" content="Hotels that use OnePageBooking HotelNetSolutions as their booking engine.">
+    <!--meta property="og:image" content="URL to an image for sharing"-->
+    <!--meta property="og:url" content="https://www.yourwebsite.com/your-page-url"-->
 
-  <meta property="og:title" content="Irish Mags - Locations">
-  <meta property="og:description" content="Locations map for Irish Mags — meetups, stores and venues.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Irish Mags - Locations">
-  <meta name="twitter:description" content="Locations map for Irish Mags — meetups, stores and venues.">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css" rel="stylesheet" />
 
-  <style>
-    html, body { height: 100%; margin: 0; padding: 0; }
-    body { font-family: 'Open Sans', sans-serif; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-  </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"Irish Mags","url":"/","description":"Locations map for Irish Mags — meetups, stores and venues."}
-  </script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      html, body { height: 100%; margin: 0; padding: 0; }
+      body { display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif; }
+      #desc { position: relative; z-index: 10; padding: 1rem; background: #fff; }
+      #map { width: 100%; flex: 1 1 auto; min-height: 0; }
+    </style>
 </head>
 <body>
+    <div id="desc">
+        <h1>OPB Hotels</h1>
+        <p>Hotels that use OnePageBooking as their booking engine.</p>
+        <p> Security Notice: Please be aware of recent phishing attempts targeting OnePageBooking users. For more information, visit the following link:
+            <a href="https://hotelnetsolutions.de/wichtiger-sicherheitshinweis-aktuelle-phishingvorfaelle/" target="_blank">Security Notice</a>
+        </p>
+        <p><i>Disclaimer: This page is for consumer information only, and is not associated with HotelNetSolutions or OnePageBooking</i></p>
+    </div>
   <div id="map"></div>
 
   
@@ -43,14 +52,15 @@
       //style: 'mapbox://styles/mapbox/empty-v1',
       //style: 'mapbox://styles/mapbox/streets-v12',
       //style: 'mapbox://styles/mapbox/light-v11', // clean, minimal look
-      //center: [-1.617, 54.9722], // newcastle ireland
-      center: [-8.0, 53.4], //ireland
-      zoom: 6
-      //zoom: 6  /// ireland zoom
+      center: [7.9, 51.0], //Germany
+      //53.7947967,4.2761089
+      zoom: 5
     });
 
     async function loadPins() {
-      const response = await fetch('mag_pins.json');
+        const response = await fetch('opb_hotels.json');
+      //const response = await fetch('opbv6_hotels.json');
+      //const response = await fetch('opbv5_hotels.json');
       const pins = await response.json();
 
       // Convert pins.json to GeoJSON
@@ -86,7 +96,9 @@
         source: 'pins',
         filter: ['has', 'point_count'],
         paint: {
-          'circle-color': '#ff9900',
+            'circle-color': '#2e8b57',    //  Green
+            //'circle-color': '#ff9900',    //  Yellow
+            //'circle-color': '#ff0000',  //  Red
           'circle-radius': [
             'step',
             ['get', 'point_count'],
@@ -123,18 +135,19 @@
           'icon-image': [
             'match',
             ['get', 'type'],
-            'Meet_Up', 'stadium',
-            //'Meet_Up', 'town-hall',
+            'Meet_Up', 'lodging',
             'Mag', 'clothing-store',
             'Hotel', 'lodging',
             'Drinks', 'bar',
-            'Food','restaurant',
-            'marker' // fallback
+            'Food', 'restaurant',
+            'marker'
           ],
           'icon-size': 2.2,
+          'icon-allow-overlap': true,
           'text-field': ['get', 'name'],
           'text-offset': [0, 2.7],
-          'text-size': 14
+          'text-size': 14,
+          'text-allow-overlap': true
         }
       });
 

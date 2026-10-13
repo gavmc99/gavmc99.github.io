@@ -407,21 +407,5 @@
 {"time":"2026-10-13T14:45:10.721+01:00","id":409,"name":"Hotel \u201eZum-Leineweber\u201c","lat":51.8286988,"lng":14.1484125,"street":"Am Waldrand 1 A","city":"Burg","country":"DE","zip":"03096","phone":"035603-640","type":"Meet_Up","description":"<a href=\"https://onepagebooking.com/zum-leineweber/\" target=\"_blank\">zum-leineweber</a> "},
 {"time":"2026-10-13T14:45:13.704+01:00","id":410,"name":"Boutiquehotel Dom","lat":47.0706155,"lng":15.442281,"street":"B\u00fcrgergasse 14","city":"Graz","country":"AT","zip":"8010","phone":"+43 316 824800","type":"Meet_Up","description":"<a href=\"https://onepagebooking.com/zumdom/\" target=\"_blank\">zumdom</a> "},
 {"time":"2026-10-13T14:45:16.654+01:00","id":411,"name":"Pension Zum Schrammel","lat":49.36763,"lng":11.37806,"street":"Raiffeisenstra\u00dfe 4","city":"Altdorf","country":"DE","zip":"90518","phone":"+49(0)9187-9097529","type":"Meet_Up","description":"<a href=\"https://onepagebooking.com/zumschrammel/\" target=\"_blank\">zumschrammel</a> "},
-{"time":"2026-10-13T14:45:19.729+01:00","id":412,"name":"Hotel Zweite Heimat","lat":54.335787742246,"lng":8.6047410964965,"street":"Am Deich 41","city":"St. Peter-Ording","country":"DE","zip":"25826","phone":"04863 474 890","type":"Meet_Up","description":"<a href=\"https://onepagebooking.com/zweiteheimat/\" target=\"_blank\">zweiteheimat</a> "},
-{
-"id": 101,
-"name": "urbanLoft Cologne",
-"lat":  50.9463788,
-"lng":  6.9536749,
-"type": "Meet_Up",
-"description": "Part of Althoff Hotels <a href=\"https://onepagebooking.com/urbanloftkoeln/\" target=\"_blank\">urbanLoft Cologne</a> "
-},
-{
-"id": 102,
-"name": "UrbanLoft Berlin",
-"lat":  52.5318496,
-"lng":  13.3640348,
-"type": "Meet_Up",
-"description": "Part of Althoff Hotels <a href=\"https://onepagebooking.com/urbanloftberlin/\" target=\"_blank\">urbanLoft Berlin</a> "
-}
+{"time":"2026-10-13T14:45:19.729+01:00","id":412,"name":"Hotel Zweite Heimat","lat":54.335787742246,"lng":8.6047410964965,"street":"Am Deich 41","city":"St. Peter-Ording","country":"DE","zip":"25826","phone":"04863 474 890","type":"Meet_Up","description":"<a href=\"https://onepagebooking.com/zweiteheimat/\" target=\"_blank\">zweiteheimat</a> "}
 ]
